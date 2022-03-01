@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <AddTask />
+    <ListTask />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AddTask from "./components/AddTask.vue";
+import ListTask from "./components/ListTask.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    AddTask,
+    ListTask,
+  },
+};
 </script>
 
 <style>
@@ -26,3 +29,23 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<!--
+tasks : [
+        {
+          name:"name",
+          description:"desc",
+          deadline:"2022-03-31"
+        },
+        {
+          name:"name",
+          description:"desc",
+          deadline:"2022-03-31"
+        },
+        {
+          name:"name",
+          description:"desc",
+          deadline:"2022-03-31"
+        }
+      ]
+-->
